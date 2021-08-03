@@ -3,8 +3,8 @@ package microservice
 import (
 	"encoding/json"
 	"fmt"
-	"go-microservices/http"
-	"go-microservices/keys"
+	"github.com/MOHC-LTD/go-microservices/http"
+	"github.com/MOHC-LTD/go-microservices/keys"
 )
 
 // APIProxy represents a connection to an API proxy

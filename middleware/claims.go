@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"go-microservices/jwt"
-	"go-microservices/microservice"
+	"github.com/MOHC-LTD/go-microservices/jwt"
+	"github.com/MOHC-LTD/go-microservices/microservice"
 	"strings"
 
 	"github.com/labstack/echo"

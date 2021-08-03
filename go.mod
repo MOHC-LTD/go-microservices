@@ -1,4 +1,4 @@
-module go-microservices
+module github.com/MOHC-LTD/go-microservices
 
 go 1.16
 
