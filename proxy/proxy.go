@@ -1,4 +1,4 @@
-package microservice
+package proxy
 
 import (
 	"encoding/json"
