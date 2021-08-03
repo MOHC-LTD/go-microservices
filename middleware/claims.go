@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"github.com/MOHC-LTD/go-microservices/jwt"
-	"github.com/MOHC-LTD/go-microservices/microservice"
+	"github.com/MOHC-LTD/go-microservices/proxy"
 	"strings"
 
 	"github.com/labstack/echo"
@@ -15,7 +15,7 @@ import (
 type GetClaim func(c echo.Context, claim string, defaultValue interface{}) (interface{}, error)
 
 // BuildGetClaim builds the GetClaim middleware.
-func BuildGetClaim(proxy microservice.APIProxy) GetClaim {
+func BuildGetClaim(proxy proxy.APIProxy) GetClaim {
 	return func(c echo.Context, claim string, defaultValue interface{}) (interface{}, error) {
 		publicKey, err := proxy.PublicKey()
 		if err != nil {
